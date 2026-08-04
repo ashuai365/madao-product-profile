@@ -21,6 +21,7 @@ const roleFit = [
       "和业务、运营、财务及客户逐段核对流程，明确谁发起、谁审批、钱怎么走、货怎么交付。先形成角色关系、流程图和问题清单，再确认项目范围与优先级。",
     tags: ["业务访谈", "流程梳理", "范围确认"],
     visual: "map",
+    visualLabels: ["客户", "业务", "产品", "财务", "研发"],
   },
   {
     index: "02",
@@ -29,6 +30,7 @@ const roleFit = [
       "围绕主链路拆解产品模块，同时补齐权限、对账、退款、异常处理和外部接口。输出原型、规则、状态流转与接口约定，让研发和合作方知道具体怎么做。",
     tags: ["产品架构", "规则设计", "接口方案"],
     visual: "blocks",
+    visualLabels: ["用户端", "交易主链路", "商户端", "规则中心", "运营后台", "外部接口"],
   },
   {
     index: "03",
@@ -37,6 +39,7 @@ const roleFit = [
       "研发阶段持续处理规则边界和跨团队依赖，上线前组织验收并准备运营配置；上线后结合交易量、转化、异常率、人工处理量和客户反馈安排下一轮迭代。",
     tags: ["项目推进", "上线验收", "数据复盘"],
     visual: "loop",
+    visualLabels: ["需求", "方案", "交付", "上线", "数据", "迭代"],
   },
 ];
 
@@ -225,11 +228,13 @@ export default function Home() {
         <aside className="demo-promo shell" aria-labelledby="demo-promo-title">
           <div className="demo-promo-copy">
             <p className="demo-promo-label">站内推荐 · 产品演示站</p>
-            <h2 id="demo-promo-title">去 MADAO 产品经理 Club，看更多产品演示</h2>
-            <p>收录产品方案、交互原型和实践记录，想进一步了解我的产品思路，可以从这里继续。</p>
+            <h2 id="demo-promo-title">MADAO 产品经理 Club</h2>
+            <p>一个面向产品经理的轻量演示站。这里放了更具体的产品案例、可操作原型和工作方法记录，用实际页面补充简历里不便展开的细节。</p>
+            <ul aria-label="网站主要内容"><li>产品案例拆解</li><li>交互原型演示</li><li>工作方法记录</li></ul>
           </div>
           <div className="demo-promo-preview" aria-hidden="true">
-            <span>MADAO</span><i /><i /><i />
+            <div className="preview-bar"><i /><i /><i /><span>madao5.top</span></div>
+            <div className="preview-body"><strong>产品经理 Club</strong><span>CASE</span><span>DEMO</span><span>NOTES</span><i /><i /></div>
           </div>
           <a className="demo-promo-link" href="https://madao5.top" target="_blank" rel="noopener noreferrer">
             访问 madao5.top <span aria-hidden="true">↗</span>
@@ -239,7 +244,7 @@ export default function Home() {
         <section className="section shell" id="role" aria-labelledby="role-title">
           <div className="section-heading"><p className="overline">我的工作方式</p><h2 id="role-title">一个项目，我通常这样推进</h2><p>不只写需求文档，更关注业务有没有梳理清楚、方案能不能执行，以及上线后是否真正解决问题。</p></div>
           <div className="role-grid">
-            {roleFit.map((item) => <article className={`role-item ${item.visual}`} key={item.index}><div className="role-figure" aria-hidden="true"><span>{item.index}</span><i /><i /><i /></div><h3>{item.title}</h3><p>{item.description}</p><div className="tag-list">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></article>)}
+            {roleFit.map((item) => <article className={`role-item ${item.visual}`} key={item.index}><div className="role-figure" aria-hidden="true"><div className="figure-top"><span>{item.index}</span><b>{item.visual === "map" ? "业务关系图" : item.visual === "blocks" ? "产品架构图" : "上线迭代环"}</b></div><div className="figure-canvas">{item.visualLabels.map((label) => <i key={label}>{label}</i>)}</div></div><h3>{item.title}</h3><p>{item.description}</p><div className="tag-list">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></article>)}
           </div>
         </section>
 
