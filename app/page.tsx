@@ -178,14 +178,18 @@ export default function Home() {
         <div className="shell header-inner">
           <a className="brand" href="#top" aria-label="MADAO 首页">
             <img src="/cat-avatar.jpg" alt="" />
-            <span>MADAO</span>
+            <span><strong>MADAO</strong><small>PRODUCT PORTFOLIO</small></span>
           </a>
           <nav className="main-nav" aria-label="页面导航">
-            <a href="#role">工作方式</a>
-            <a href="#cases">项目案例</a>
-            <a href="#experience">工作经历</a>
+            <a href="#role"><strong>工作方式</strong><small>如何推进项目</small></a>
+            <a href="#cases"><strong>项目案例</strong><small>具体做过什么</small></a>
+            <a href="#experience"><strong>工作经历</strong><small>职业时间线</small></a>
+            <a href="#contact"><strong>个人资料</strong><small>方向与联系方式</small></a>
           </nav>
-          <a className="contact-link" href="#contact">联系我</a>
+          <div className="nav-actions">
+            <a className="demo-link" href="https://madao5.top" target="_blank" rel="noopener noreferrer">产品演示站 ↗</a>
+            <a className="contact-link" href="#contact">联系我</a>
+          </div>
         </div>
       </header>
 
@@ -204,6 +208,7 @@ export default function Home() {
                 <a className="button primary" href="#cases">查看项目案例</a>
                 <a className="button secondary" href="#experience">查看工作经历</a>
               </div>
+              <div className="hero-route" aria-label="本页阅读顺序"><span>READING PATH</span><a href="#role">业务梳理</a><i>→</i><a href="#cases">项目方案</a><i>→</i><a href="#experience">职业经历</a></div>
             </div>
 
             <aside className="profile-card" aria-label="MADAO 的求职概况">
