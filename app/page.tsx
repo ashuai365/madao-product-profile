@@ -3,123 +3,118 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "MADAO｜资深产品经理 / 产品负责人",
   description:
-    "MADAO 的面试工作简介：16 年+产品经验，覆盖 ToB 交易平台、供应链金融、电商中后台、在线教育与行业 AI。",
+    "MADAO 的产品工作简介：10 年+产品经验，覆盖 ToB 交易平台、供应链金融、电商中后台、在线教育与行业 AI。",
 };
 
 const metrics = [
-  { value: "16 年+", label: "持续负责互联网与平台产品" },
-  { value: "交易全链路", label: "商品、订单、支付、结算与履约" },
-  { value: "多端产品", label: "用户端、商户端、运营端与后台" },
-  { value: "跨机构协同", label: "银行、支付、物流与渠道平台" },
+  { value: "10 年+", label: "产品与平台建设经验" },
+  { value: "5 类业务", label: "交易、金融、电商、教育与 AI" },
+  { value: "多端协同", label: "用户端、商户端、运营端与后台" },
+  { value: "完整交付", label: "调研、方案、上线、运营与复盘" },
 ];
 
 const roleFit = [
   {
     index: "01",
-    title: "先把业务链路画明白",
+    title: "把业务现状梳理清楚",
     description:
-      "先和业务、运营、财务及客户逐段核对现状，梳理谁发起、谁审批、钱怎么走、货怎么交付，再输出角色关系、流程图和问题清单。需求评审前先把范围和优先级说清楚。",
+      "和业务、运营、财务及客户逐段核对流程，明确谁发起、谁审批、钱怎么走、货怎么交付。先形成角色关系、流程图和问题清单，再确认项目范围与优先级。",
     tags: ["业务访谈", "流程梳理", "范围确认"],
+    visual: "map",
   },
   {
     index: "02",
-    title: "按交易闭环拆产品方案",
+    title: "把方案拆到可执行",
     description:
-      "围绕商品、订单、合同、支付、结算、履约逐模块设计，同时补齐权限、对账、退款和异常处理。涉及银行、支付或外部平台时，会把接口字段、状态流转和失败重试一起落进方案。",
-    tags: ["产品架构", "状态流转", "接口方案"],
+      "围绕主链路拆解产品模块，同时补齐权限、对账、退款、异常处理和外部接口。输出原型、规则、状态流转与接口约定，让研发和合作方知道具体怎么做。",
+    tags: ["产品架构", "规则设计", "接口方案"],
+    visual: "blocks",
   },
   {
     index: "03",
-    title: "跟到上线，也跟上线后数据",
+    title: "跟到上线，也看上线后表现",
     description:
-      "研发阶段持续处理规则边界和跨团队依赖，上线前组织验收并准备运营配置。上线后看交易量、转化、异常率和人工处理量，再结合客户反馈安排下一轮迭代。",
+      "研发阶段持续处理规则边界和跨团队依赖，上线前组织验收并准备运营配置；上线后结合交易量、转化、异常率、人工处理量和客户反馈安排下一轮迭代。",
     tags: ["项目推进", "上线验收", "数据复盘"],
+    visual: "loop",
   },
 ];
 
 const cases = [
   {
     type: "产业互联网｜2023.10 至今",
-    title: "怎样把采购、交易与融资放进同一条业务链路？",
+    title: "企业采购、商品交易与融资的一体化平台",
     description:
-      "围绕企业采购、大宗交易和融资场景，连续负责交易底座、采购协同、银行接口与经营数据产品。",
+      "围绕企业采购和大宗交易，把交易底座、招采协同、银行融资与经营数据放在同一套平台内推进。",
     responsibilities: [
-      "交易底座：商品 SPU / SKU / 批次、订单、合同、支付结算、仓储物流、开票和客户关系。",
-      "采购协同：供应商分级、询比价与招标、线上合约、SRM 进销存及集团内采商城。",
-      "金融接入：打通应收账款电子债权凭证与邮储银行信贷流程，覆盖客户建档、融资申请、结果通知、还款状态和文件传输。",
-      "数据运营：规划 95 个核心埋点、商家看板和运营驾驶舱，并参与行业 AI 产品规划。",
+      "设计商品 SPU / SKU / 批次、订单、合同、支付结算、仓储物流、开票和客户关系等基础能力。",
+      "建设供应商分级、询比价与招标、线上合约、SRM 进销存及集团内采商城。",
+      "对接应收账款电子债权凭证与邮储银行信贷，覆盖建档、申请、审批结果、还款状态和文件传输。",
+      "规划 95 个核心埋点、商家看板和运营驾驶舱，并参与行业 AI 产品规划。",
     ],
     result: "银行项目上线首月业务规模近 3 亿元；核心品类 GMV 阶段增长 150%+",
     tags: ["大宗交易", "招采 / SRM", "银行接口", "数据运营"],
+    visual: "trade",
   },
   {
     type: "B2B 交易｜2021—2023",
-    title: "从零开始，一套 B2B 交易平台先搭什么？",
+    title: "从 0 到 1 搭建 B2B 交易平台",
     description:
-      "担任产品中心负责人，从最小交易闭环开始，完成微信小程序、商户端和运营端的产品建设。",
+      "担任产品中心负责人，从最小交易闭环起步，完成微信小程序、商户端与运营端的基础产品建设。",
     responsibilities: [
       "搭建用户、商户、账户、商品、购物车、订单、支付和结算等核心模块。",
       "接入聚合担保交易和银行卡快捷支付，支持合并支付、分账、绑卡支付及商户对账。",
-      "围绕平台经营设计账期补贴、拼团计划和分销体系，并实现服务费实时划扣及佣金结算。",
+      "设计账期补贴、拼团和分销体系，实现平台服务费实时划扣与佣金结算。",
       "接入银行授信与贷款支付，在收银台支持企业信用额度支付、结果查询和异常退款。",
     ],
-    result: "完成小程序、商户端和运营端基础版本上线",
+    result: "完成小程序、商户端和运营端基础版本上线，并跑通交易与资金闭环",
     tags: ["交易闭环", "聚合支付", "分销结算", "信用支付"],
+    visual: "payment",
   },
   {
     type: "供应链金融｜2019—2021",
-    title: "供应链金融平台，如何连接渠道、风控与资金方？",
+    title: "连接渠道、风控与资金方的融资平台",
     description:
       "作为主产品搭建面向中小微供应商的融资平台，连接渠道资产、内部风控、外部资金方和第三方支付。",
     responsibilities: [
-      "设计用户、商户、账户、资产接入、平台授信、资金方授信、融资和还款流程。",
-      "建设渠道数据中心和标准接口，让 SaaS、B2B 平台可以推送客户及业务数据。",
-      "对接内部大数据风控和外部银行信贷系统，完成客户与资金方的匹配及流程路由。",
-      "接入第三方支付收取融担费用，并支持渠道返佣相关流程线上化。",
+      "设计客户、商户、账户、资产接入、平台授信、资金方授信、融资和还款流程。",
+      "建设渠道数据中心与标准接口，让 SaaS、B2B 平台可以推送客户及业务数据。",
+      "对接内部大数据风控和外部银行信贷，完成客户与资金方的匹配及流程路由。",
+      "接入第三方支付收取融担费用，并支持渠道返佣流程线上化。",
     ],
-    result: "一年累计放款 37 亿元；近 30 家渠道平台接入",
+    result: "上线一年累计放款 37 亿元；接入近 30 家 SaaS 与 B2B 渠道平台",
     tags: ["资产接入", "授信风控", "资金路由", "开放接口"],
+    visual: "finance",
   },
   {
     type: "京东 POP｜2017—2019",
-    title: "面对海量商家，发品和内容审核怎样提效？",
+    title: "商家发品与内容审核提效",
     description:
-      "负责 POP 商家后台的商品、视频和图片产品，重点解决多业务线需求复用、商家发品效率和内容审核压力。",
+      "负责 POP 商家后台的商品、视频和图片产品，重点解决多业务线能力复用、商家发品效率与内容审核压力。",
     responsibilities: [
-      "把商品字段抽象为可配置组件，按类目、商家类型和服务能力组合商品发布页面。",
+      "将商品字段抽象为可配置组件，按类目、商家类型和服务能力组合发布页面。",
       "重构主图视频审核流程，支持二级审批、类目范围配置和 AI 审核结果回传。",
-      "设计尺码助手：商家维护尺码表，支持粘贴和 OCR 提取，前台结合用户身体数据推荐尺码。",
+      "设计尺码助手，支持商家粘贴或 OCR 提取尺码表，并结合用户身体数据推荐尺码。",
       "作为商品中台接口人，推进拼购、全景主图、便利店标品库等 20 余项业务需求。",
     ],
-    result: "参与 20+ 项业务支持，应对视频日增近百万的审核压力",
+    result: "支持 20+ 项业务需求，应对主图视频日增近百万的审核压力",
     tags: ["商家后台", "发品组件化", "AI 审核", "商品中台"],
+    visual: "audit",
   },
   {
     type: "在线教育｜2013—2017",
-    title: "在线培训产品，如何从 MVP 走到核心产品线？",
+    title: "在线职业培训产品从 MVP 到核心产品线",
     description:
       "负责学员端、讲师端和运营端迭代，并从 0 到 1 推进在线职业培训产品。",
     responsibilities: [
-      "通过问卷、访谈和小范围招生验证培训模式，从试听、报名、补款做起逐步完善产品。",
-      "把培训过程改为闯关式学习，补充教学管理、题库、练习测验和直播答疑。",
-      "重构课程发布，把课程拆成商品信息、目录和素材库，支持视频批量上传与素材复用。",
-      "建立讲师积分、等级和权益体系，并补充优惠券、营销活动和订单分摊规则。",
+      "通过问卷、访谈和小范围招生验证培训模式，从试听、报名、补款逐步完善产品。",
+      "将培训过程设计为闯关式学习，补充教学管理、题库、练习测验和直播答疑。",
+      "重构课程发布，将课程拆成商品信息、目录和素材库，支持视频批量上传与素材复用。",
+      "建立讲师积分、等级与权益体系，并补充优惠券、营销活动和订单分摊规则。",
     ],
-    result: "在线培训发展为公司核心产品线，课程发布与教学管理形成完整体系",
+    result: "在线培训发展为公司核心产品线，形成完整的课程发布与教学管理体系",
     tags: ["MVP 验证", "闯关学习", "课程发布", "讲师运营"],
-  },
-  {
-    type: "内容平台｜2010—2013",
-    title: "早期内容平台，怎样从日常运营走到独立产品建设？",
-    description:
-      "负责中国载人航天工程网的内容运营、专题策划和活动支持，并参与英文版网站从规划到上线。",
-    responsibilities: [
-      "承担网站日常内容采编、发布和专题策划，围绕重要任务节点组织页面内容。",
-      "根据中文站内容结构和海外读者需求，梳理英文站栏目、页面及发布流程。",
-      "协调内容、设计和开发推进英文站建设，跟进测试、上线及后续内容维护。",
-    ],
-    result: "完成英文版网站从 0 到 1 建设，并形成持续更新的内容运营流程",
-    tags: ["内容运营", "专题策划", "网站建设", "英文站"],
+    visual: "learning",
   },
 ];
 
@@ -154,21 +149,28 @@ const experiences = [
     role: "高级产品经理",
     detail: "学员端、讲师端、运营端及在线职业培训产品",
   },
-  {
-    period: "2010.04 — 2013.06",
-    company: "中国载人航天工程网",
-    role: "产品经理",
-    detail: "网站内容与专题策划、日常运营及英文版网站从 0 到 1 建设",
-  },
 ];
+
+function WorkVisual({ variant }: { variant: string }) {
+  if (variant === "trade") {
+    return <div className="work-visual trade-visual" aria-label="从采购到融资的业务链路图"><span>招采</span><i /><span>交易</span><i /><span>履约</span><i /><span>融资</span></div>;
+  }
+  if (variant === "payment") {
+    return <div className="work-visual payment-visual" aria-label="订单支付与分账示意图"><div><small>订单金额</small><strong>¥ 128,600</strong></div><div className="split"><span>商户结算</span><span>平台服务费</span></div></div>;
+  }
+  if (variant === "finance") {
+    return <div className="work-visual finance-visual" aria-label="供应链金融连接关系图"><span>渠道资产</span><b>风控中心</b><span>银行资金</span><em>标准接口 · 统一路由</em></div>;
+  }
+  if (variant === "audit") {
+    return <div className="work-visual audit-visual" aria-label="商品内容审核工作台示意图"><div className="audit-card"><i /><span>商品主图视频</span><b>AI 初审通过</b></div><div className="audit-card"><i /><span>尺码信息</span><b>待人工复核</b></div></div>;
+  }
+  return <div className="work-visual learning-visual" aria-label="在线学习进度示意图"><div><span>01</span><b>试听与报名</b></div><div><span>02</span><b>课程闯关</b></div><div><span>03</span><b>测验与答疑</b></div></div>;
+}
 
 export default function Home() {
   return (
     <>
-      <a className="skip-link" href="#main-content">
-        跳到主要内容
-      </a>
-
+      <a className="skip-link" href="#main-content">跳到主要内容</a>
       <header className="site-header">
         <div className="shell header-inner">
           <a className="brand" href="#top" aria-label="MADAO 首页">
@@ -177,12 +179,10 @@ export default function Home() {
           </a>
           <nav className="main-nav" aria-label="页面导航">
             <a href="#role">工作方式</a>
-            <a href="#cases">项目复盘</a>
+            <a href="#cases">项目案例</a>
             <a href="#experience">工作经历</a>
           </nav>
-          <a className="contact-link" href="#contact">
-            联系我
-          </a>
+          <a className="contact-link" href="#contact">联系我</a>
         </div>
       </header>
 
@@ -190,185 +190,72 @@ export default function Home() {
         <section className="hero" id="top" aria-labelledby="hero-title">
           <div className="shell hero-grid">
             <div className="hero-copy">
-              <p className="overline">MADAO · 资深产品经理 / 产品负责人</p>
-              <h1 id="hero-title">
-                把复杂业务，
-                <span>做成能落地的产品。</span>
-              </h1>
-              <p className="hero-lead">
-                主要负责 ToB 交易平台、供应链金融和电商中后台，做过商品、订单、合同、支付、结算、履约、授信及银行接口等核心模块。
-              </p>
-              <p className="hero-summary">
-                16 年+互联网产品经验。通常从业务访谈和流程梳理开始，完成产品架构、原型与规则设计，协调研发、测试和外部合作方推进上线，再通过交易数据、异常情况和一线反馈继续迭代。
-              </p>
+              <p className="overline">资深产品经理 · 产品负责人</p>
+              <h1 id="hero-title">把复杂业务梳理清楚，<span>再做成能落地的产品。</span></h1>
+              <p className="hero-lead">主要负责 ToB 交易平台、供应链金融和电商中后台，实际做过商品、订单、合同、支付、结算、履约、授信与银行接口等核心模块。</p>
+              <p className="hero-summary">我的工作通常从业务访谈和流程梳理开始，完成产品架构、原型与规则设计，协调研发、测试和外部合作方推进上线，再根据交易数据、异常情况和一线反馈继续迭代。</p>
               <div className="hero-tags" aria-label="核心经验标签">
-                {["ToB 平台", "供应链金融", "电商中后台", "0 到 1", "数据运营"].map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
+                {["ToB 平台", "供应链金融", "电商中后台", "0 到 1", "数据运营"].map((tag) => <span key={tag}>{tag}</span>)}
               </div>
               <div className="hero-actions">
-                <a className="button primary" href="#cases">
-                  看我具体做过什么
-                </a>
-                <a className="button secondary" href="#experience">
-                  查看完整经历
-                </a>
+                <a className="button primary" href="#cases">查看项目案例</a>
+                <a className="button secondary" href="#experience">查看工作经历</a>
               </div>
             </div>
 
             <aside className="profile-card" aria-label="MADAO 的求职概况">
-              <span className="profile-badge">OPEN TO WORK</span>
               <div className="profile-head">
-                <img
-                  src="/cat-avatar.jpg"
-                  alt="MADAO 的猫头像：戴黑色圆形墨镜的灰猫"
-                />
-                <div>
-                  <strong>MADAO</strong>
-                  <span>北京 · 16 年+经验</span>
-                </div>
+                <img src="/cat-avatar.jpg" alt="MADAO 的猫头像：戴黑色圆形墨镜的灰猫" />
+                <div><strong>MADAO</strong><span>北京 · 10 年+产品经验</span></div>
               </div>
               <dl>
-                <div>
-                  <dt>方向</dt>
-                  <dd>平台产品 / 产品负责人</dd>
-                </div>
-                <div>
-                  <dt>专长</dt>
-                  <dd>0 到 1 / 中台 / 项目落地</dd>
-                </div>
-                <div>
-                  <dt>领域</dt>
-                  <dd>交易 / 金融 / 电商 / AI</dd>
-                </div>
+                <div><dt>方向</dt><dd>资深产品经理 / 产品负责人</dd></div>
+                <div><dt>擅长</dt><dd>复杂业务梳理、平台规划、项目落地</dd></div>
+                <div><dt>领域</dt><dd>交易、金融、电商与行业 AI</dd></div>
               </dl>
-              <p>“先把业务讲清楚，再把产品做好。”</p>
+              <p>希望把事情说明白，也把产品真正做出来。</p>
             </aside>
           </div>
         </section>
 
         <section className="metrics shell" aria-label="产品经验概览">
-          {metrics.map((metric) => (
-            <div key={metric.label}>
-              <strong>{metric.value}</strong>
-              <span>{metric.label}</span>
-            </div>
-          ))}
+          {metrics.map((metric) => <div key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
         </section>
 
         <section className="section shell" id="role" aria-labelledby="role-title">
-          <div className="section-heading">
-            <p className="overline">HOW I WORK</p>
-            <h2 id="role-title">我具体怎么推进项目</h2>
-            <p>不只写需求文档。下面是我在复杂 ToB 项目里通常会实际承担的三段工作。</p>
-          </div>
+          <div className="section-heading"><p className="overline">我的工作方式</p><h2 id="role-title">一个项目，我通常这样推进</h2><p>不只写需求文档，更关注业务有没有梳理清楚、方案能不能执行，以及上线后是否真正解决问题。</p></div>
           <div className="role-grid">
-            {roleFit.map((item) => (
-              <article className="role-item" key={item.index}>
-                <span className="item-index">{item.index}</span>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <div className="tag-list" aria-label={`${item.title}相关标签`}>
-                  {item.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
-                </div>
-              </article>
-            ))}
+            {roleFit.map((item) => <article className={`role-item ${item.visual}`} key={item.index}><div className="role-figure" aria-hidden="true"><span>{item.index}</span><i /><i /><i /></div><h3>{item.title}</h3><p>{item.description}</p><div className="tag-list">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></article>)}
           </div>
         </section>
 
         <section className="cases-section" id="cases" aria-labelledby="cases-title">
           <div className="shell">
-            <div className="section-heading">
-              <p className="overline">SELECTED WORK</p>
-              <h2 id="cases-title">六段经历，我具体做了什么</h2>
-              <p>按业务背景、负责模块、关键方案和项目结果展开，方便同行快速判断我的实际工作边界。</p>
-            </div>
+            <div className="section-heading"><p className="overline">代表项目</p><h2 id="cases-title">我具体做过什么</h2><p>用业务背景、负责模块、关键方案和项目结果说明实际工作边界，方便同行快速判断经验是否匹配。</p></div>
             <div className="case-list">
-              {cases.map((item, index) => (
-                <article className="case-item" key={item.title}>
-                  <span className="case-number">0{index + 1}</span>
-                  <div>
-                    <p className="case-type">{item.type}</p>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                    <ul className="case-responsibilities">
-                      {item.responsibilities.map((responsibility) => (
-                        <li key={responsibility}>{responsibility}</li>
-                      ))}
-                    </ul>
-                    <div className="tag-list case-tags" aria-label={`${item.title}相关标签`}>
-                      {item.tags.map((tag) => (
-                        <span key={tag}>{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <aside className="case-result">
-                    <span>项目结果</span>
-                    <strong>{item.result}</strong>
-                  </aside>
-                </article>
-              ))}
+              {cases.map((item, index) => <article className="case-item" key={item.title}>
+                <div className="case-main">
+                  <div className="case-meta"><span>0{index + 1}</span><p>{item.type}</p></div>
+                  <h3>{item.title}</h3><p className="case-description">{item.description}</p>
+                  <ul>{item.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}</ul>
+                  <div className="tag-list">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                </div>
+                <aside className="case-side"><WorkVisual variant={item.visual} /><div className="case-result"><span>项目结果</span><strong>{item.result}</strong></div></aside>
+              </article>)}
             </div>
           </div>
         </section>
 
         <section className="section shell" id="experience" aria-labelledby="experience-title">
-          <div className="section-heading compact">
-            <p className="overline">EXPERIENCE</p>
-            <h2 id="experience-title">主要工作经历</h2>
-            <p>按时间梳理主要经历，详细项目放在上方，早期内容平台经验也一并保留。</p>
-          </div>
-          <ol className="experience-list">
-            {experiences.map((item) => (
-              <li key={`${item.company}-${item.period}`}>
-                <time>{item.period}</time>
-                <strong>{item.company}</strong>
-                <div>
-                  <p className="experience-role">{item.role}</p>
-                  <p className="experience-detail">{item.detail}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+          <div className="section-heading compact"><p className="overline">工作经历</p><h2 id="experience-title">主要职业经历</h2><p>按时间梳理产品岗位经历，详细负责内容与项目案例见上方。</p></div>
+          <ol className="experience-list">{experiences.map((item) => <li key={`${item.company}-${item.period}`}><time>{item.period}</time><div><strong>{item.company}</strong><p>{item.role}</p></div><span>{item.detail}</span></li>)}</ol>
         </section>
 
         <section className="contact-section" id="contact" aria-labelledby="contact-title">
-          <div className="shell contact-grid">
-            <div>
-              <p className="overline">LET&apos;S TALK</p>
-              <h2 id="contact-title">如果你也在解决复杂业务问题，我们可以聊聊。</h2>
-              <p>
-                目标方向：资深产品经理 / 产品负责人。优先关注产业互联网、企业服务、供应链金融、大宗交易与行业
-                AI 岗位。
-              </p>
-            </div>
-            <div className="wechat-panel">
-              <div className="wechat-identity">
-                <img
-                  className="wechat-avatar"
-                  src="/cat-avatar.jpg"
-                  alt="MADAO 的猫头像"
-                />
-                <div>
-                  <span>WECHAT</span>
-                  <strong>扫码添加 MADAO</strong>
-                  <p>建议备注“面试 + 公司名称”。</p>
-                </div>
-              </div>
-              <img className="wechat-code" src="/wechat-qr-code.jpg" alt="MADAO 的微信二维码" />
-            </div>
-          </div>
+          <div className="shell contact-grid"><div><p className="overline">联系我</p><h2 id="contact-title">如果岗位与这些经验匹配，我们可以聊聊。</h2><p>目标方向：资深产品经理 / 产品负责人。重点关注产业互联网、企业服务、供应链金融、大宗交易与行业 AI。</p></div><div className="wechat-panel"><div className="wechat-identity"><img src="/cat-avatar.jpg" alt="MADAO 的猫头像" /><div><span>WECHAT</span><strong>扫码添加 MADAO</strong><p>建议备注“面试 + 公司名称”</p></div></div><img className="wechat-code" src="/wechat-qr-code.jpg" alt="MADAO 的微信二维码" /></div></div>
         </section>
       </main>
-
-      <footer className="site-footer">
-        <div className="shell">
-          <span>MADAO · SENIOR PRODUCT MANAGER</span>
-          <a href="#top">返回顶部 ↑</a>
-        </div>
-      </footer>
+      <footer className="site-footer"><div className="shell"><span>MADAO · PRODUCT MANAGER</span><a href="#top">返回顶部 ↑</a></div></footer>
     </>
   );
 }
