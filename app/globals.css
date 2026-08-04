@@ -50,6 +50,18 @@ a:focus-visible { outline:3px solid rgba(5,109,232,.3); outline-offset:3px; }
 .metrics div+div { border-left:1px solid var(--line); }
 .metrics strong { display:block; color:var(--blue); font-size:21px; line-height:1.4; }
 .metrics span { display:block; margin-top:3px; color:var(--muted); font-size:13px; }
+.demo-promo { display:grid; grid-template-columns:minmax(0,1fr) 170px auto; align-items:center; gap:30px; margin-top:22px; padding:24px 28px; border:1px solid #d6e9ff; border-radius:8px; background:linear-gradient(110deg,#fff 0%,#f7fbff 72%,#edf5ff 100%); box-shadow:var(--shadow); }
+.demo-promo-copy { max-width:620px; }
+.demo-promo-label { margin:0 0 5px; color:var(--blue); font-size:12px; font-weight:600; }
+.demo-promo h2 { margin:0; font-size:20px; line-height:1.45; letter-spacing:-.015em; }
+.demo-promo-copy>p:last-child { margin:6px 0 0; color:var(--muted); font-size:13px; }
+.demo-promo-preview { height:78px; display:grid; grid-template-columns:44px 1fr; grid-template-rows:repeat(3,1fr); align-items:center; gap:6px 10px; padding:13px; border:1px solid var(--line); border-radius:6px; background:#fff; transform:rotate(-1.5deg); }
+.demo-promo-preview span { grid-row:1/-1; display:grid; place-items:center; width:44px; height:44px; border-radius:5px; background:var(--blue); color:#fff; font-size:11px; font-weight:700; }
+.demo-promo-preview i { display:block; height:5px; border-radius:2px; background:#dcebff; }
+.demo-promo-preview i:nth-of-type(2) { width:78%; }
+.demo-promo-preview i:nth-of-type(3) { width:58%; }
+.demo-promo-link { min-height:40px; display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:0 16px; border:1px solid var(--blue); border-radius:4px; color:var(--blue); font-size:13px; font-weight:600; white-space:nowrap; }
+.demo-promo-link:hover { background:var(--blue); color:#fff; }
 .section,.cases-section { padding:86px 0; }
 .section-heading { max-width:760px; margin-bottom:38px; }
 .section-heading.compact { margin-bottom:30px; }
@@ -126,7 +138,7 @@ a:focus-visible { outline:3px solid rgba(5,109,232,.3); outline-offset:3px; }
 .site-footer { border-top:1px solid var(--line); background:#fff; color:#8590a6; }
 .site-footer .shell { min-height:62px; display:flex; align-items:center; justify-content:space-between; gap:20px; font-size:12px; }
 .site-footer a { color:var(--blue); }
-@media(max-width:900px){.header-inner{grid-template-columns:1fr auto}.main-nav{display:none}.hero-grid,.contact-grid{grid-template-columns:1fr;gap:40px}.profile-card{max-width:460px}.role-grid{grid-template-columns:1fr}.case-item{grid-template-columns:1fr}.case-side{grid-template-columns:1fr 1fr}.experience-list li{grid-template-columns:140px 190px 1fr}}
-@media(max-width:660px){.shell{width:min(100% - 28px,1100px)}.hero{padding:54px 0 42px}.hero h1{font-size:38px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.metrics{grid-template-columns:repeat(2,1fr)}.metrics div:nth-child(3){border-left:0}.metrics div:nth-child(n+3){border-top:1px solid var(--line)}.section,.cases-section{padding:64px 0}.case-item{padding:22px}.case-side{grid-template-columns:1fr}.experience-list li{grid-template-columns:1fr;gap:3px}.wechat-panel{grid-template-columns:1fr}.wechat-code{width:min(100%,210px)}}
+@media(max-width:900px){.header-inner{grid-template-columns:1fr auto}.main-nav{display:none}.hero-grid,.contact-grid{grid-template-columns:1fr;gap:40px}.profile-card{max-width:460px}.demo-promo{grid-template-columns:minmax(0,1fr) auto}.demo-promo-preview{display:none}.role-grid{grid-template-columns:1fr}.case-item{grid-template-columns:1fr}.case-side{grid-template-columns:1fr 1fr}.experience-list li{grid-template-columns:140px 190px 1fr}}
+@media(max-width:660px){.shell{width:min(100% - 28px,1100px)}.hero{padding:54px 0 42px}.hero h1{font-size:38px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.metrics{grid-template-columns:repeat(2,1fr)}.metrics div:nth-child(3){border-left:0}.metrics div:nth-child(n+3){border-top:1px solid var(--line)}.demo-promo{grid-template-columns:1fr;gap:18px;padding:22px}.demo-promo-link{justify-self:start}.section,.cases-section{padding:64px 0}.case-item{padding:22px}.case-side{grid-template-columns:1fr}.experience-list li{grid-template-columns:1fr;gap:3px}.wechat-panel{grid-template-columns:1fr}.wechat-code{width:min(100%,210px)}}
 @media(max-width:430px){.brand span{display:none}.hero h1{font-size:34px}.hero-actions{grid-template-columns:1fr}.metrics div{padding:18px 14px}.case-main h3{font-size:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

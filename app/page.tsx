@@ -222,6 +222,20 @@ export default function Home() {
           {metrics.map((metric) => <div key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
         </section>
 
+        <aside className="demo-promo shell" aria-labelledby="demo-promo-title">
+          <div className="demo-promo-copy">
+            <p className="demo-promo-label">站内推荐 · 产品演示站</p>
+            <h2 id="demo-promo-title">去 MADAO 产品经理 Club，看更多产品演示</h2>
+            <p>收录产品方案、交互原型和实践记录，想进一步了解我的产品思路，可以从这里继续。</p>
+          </div>
+          <div className="demo-promo-preview" aria-hidden="true">
+            <span>MADAO</span><i /><i /><i />
+          </div>
+          <a className="demo-promo-link" href="https://madao5.top" target="_blank" rel="noopener noreferrer">
+            访问 madao5.top <span aria-hidden="true">↗</span>
+          </a>
+        </aside>
+
         <section className="section shell" id="role" aria-labelledby="role-title">
           <div className="section-heading"><p className="overline">我的工作方式</p><h2 id="role-title">一个项目，我通常这样推进</h2><p>不只写需求文档，更关注业务有没有梳理清楚、方案能不能执行，以及上线后是否真正解决问题。</p></div>
           <div className="role-grid">
