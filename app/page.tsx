@@ -45,6 +45,7 @@ const roleFit = [
 
 const cases = [
   {
+    slug: "industry-trade-finance",
     type: "产业互联网｜2023.10 至今",
     title: "企业采购、商品交易与融资的一体化平台",
     description:
@@ -60,6 +61,7 @@ const cases = [
     visual: "trade",
   },
   {
+    slug: "b2b-platform",
     type: "B2B 交易｜2021—2023",
     title: "从 0 到 1 搭建 B2B 交易平台",
     description:
@@ -75,6 +77,7 @@ const cases = [
     visual: "payment",
   },
   {
+    slug: "supply-chain-finance",
     type: "供应链金融｜2019—2021",
     title: "连接渠道、风控与资金方的融资平台",
     description:
@@ -90,6 +93,7 @@ const cases = [
     visual: "finance",
   },
   {
+    slug: "jd-merchant-products",
     type: "京东 POP｜2017—2019",
     title: "商家发品与内容审核提效",
     description:
@@ -105,6 +109,7 @@ const cases = [
     visual: "audit",
   },
   {
+    slug: "online-training",
     type: "在线教育｜2013—2017",
     title: "在线职业培训产品从 MVP 到核心产品线",
     description:
@@ -263,6 +268,7 @@ export default function Home() {
                   <h3>{item.title}</h3><p className="case-description">{item.description}</p>
                   <ul>{item.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}</ul>
                   <div className="tag-list">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                  <a className="case-detail-link" href={`/projects/${item.slug}`}>查看项目详情 <span aria-hidden="true">→</span></a>
                 </div>
                 <aside className="case-side"><WorkVisual variant={item.visual} /><div className="case-result"><span>项目结果</span><strong>{item.result}</strong></div></aside>
               </article>)}
