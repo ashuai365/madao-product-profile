@@ -1,0 +1,26 @@
+{
+  "contentVersion": "2026-10-04-resumes-v1",
+  "canonicalDomain": "https://yangshuai.work",
+  "routes": [
+    "/",
+    "/projects/industry-trade-finance",
+    "/projects/jd-merchant-products",
+    "/projects/bulk-ai-app",
+    "/projects/huarong-echain",
+    "/projects/supply-chain-finance",
+    "/projects/b2b-platform",
+    "/projects/online-training",
+    "/resumes/ecommerce",
+    "/resumes/finance"
+  ],
+  "referenceResumes": [
+    {
+      "filename": "杨帅_产品经理_电商版_文本.txt",
+      "sha256": "61f81c9fb2baa495767a3aa9683d1994f84c51bde2ea90f17a86dcc9cfdaa18d"
+    },
+    {
+      "filename": "杨帅_产品经理_金融版_文本.txt",
+      "sha256": "7023a60b479238dfca2f58cb79ffcc69dc9bf1f43506e36693ca167ba9a464e4"
+    }
+  ]
+}
