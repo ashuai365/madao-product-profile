@@ -1,0 +1,83 @@
+/* Content-led portfolio: restrained type and diagrams drawn from case facts. */
+:root{--editorial-copy:#555047;--editorial-paper:#f7f1e9;--editorial-rule:#ded3c6}
+.focus-hero .gallery-hero-inner{padding:36px 0 30px;grid-template-columns:minmax(0,1fr) 240px;gap:70px}
+.focus-hero .gallery-intro h1{font-size:34px;font-weight:650;line-height:1.5;letter-spacing:-.015em;margin-bottom:17px;display:flex;align-items:baseline;gap:20px}
+.focus-hero .gallery-intro h1 span{font-size:21px;font-weight:500;letter-spacing:0;color:var(--muted)}
+.focus-hero .overline{font-size:12px;margin-bottom:13px}
+.focus-hero .gallery-domains{font-size:17px;font-weight:400;line-height:1.95;max-width:760px;text-wrap:pretty;margin:0 0 10px;color:var(--ink)}
+.focus-hero .gallery-subtitle{font-size:15px;line-height:1.95;max-width:760px;color:var(--editorial-copy)}
+.focus-primary{font-size:14px;margin-top:19px;gap:10px;font-weight:500}
+.focus-hero .gallery-resume-links{padding-top:37px;gap:12px}
+.cases-section{padding-top:22px}.focus-section-heading{padding-bottom:23px}
+.focus-section-heading h2,.focus-more .section-heading h2,.section-heading h2,.gallery-about h2,.contact-section h2{font-size:22px;font-weight:600;line-height:1.6;letter-spacing:0}
+.focus-section-heading .overline{font-size:11px;margin-bottom:6px}
+.editorial-section-intro{font-size:15px;line-height:1.85;max-width:760px;color:var(--muted);margin:8px 0 0}
+.focus-grid{gap:24px}.focus-project{border-color:var(--editorial-rule);border-radius:5px}
+.focus-project .gallery-project-summary{padding:22px 23px 20px;min-width:0}
+.focus-project .gallery-project-summary h3{font-size:20px;font-weight:600;line-height:1.65;min-height:66px;text-wrap:balance;margin-bottom:6px;letter-spacing:0}
+.focus-project .gallery-project-summary>p:first-child{font-size:12px;line-height:1.8;margin-bottom:9px}
+.focus-project .gallery-project-role{font-size:12px;font-weight:400;line-height:1.9;min-height:24px;margin-bottom:19px;color:var(--muted)}
+.focus-evidence{gap:16px;margin-bottom:18px}.focus-evidence>div{grid-template-columns:1fr;gap:4px}
+.focus-evidence dt{font-size:12px;line-height:1.8;color:var(--muted)}
+.focus-evidence dd{font-size:15px;line-height:1.9;color:var(--editorial-copy);font-weight:400}
+.focus-evidence>div:last-child dd{font-weight:400;color:var(--editorial-copy)}
+.focus-project .gallery-project-summary .case-detail-link{color:var(--blue);font-size:14px;font-weight:500;padding-top:6px}
+.focus-secondary .gallery-project-summary{padding:23px 0 0;background:transparent}
+.focus-secondary .gallery-project-summary h3{font-size:19px;min-height:63px}.focus-secondary .focus-evidence dd{font-size:15px}
+.focus-secondary .focus-evidence{gap:15px}.focus-secondary .gallery-project-role{display:block;min-height:24px}
+.gallery-about{grid-template-columns:240px minmax(0,1fr);gap:44px}.focus-about-copy p,.contact-section h2+p{font-size:16px;line-height:1.95;color:var(--editorial-copy)}
+.section-heading>p:last-child{font-size:15px;line-height:1.85}.experience-list li{grid-template-columns:145px 280px minmax(0,1fr);gap:24px}.experience-list strong{font-size:16px;line-height:1.8}.experience-list>li>span{font-size:15px;line-height:1.85}.experience-list p{font-size:13px;line-height:1.8}
+
+/* These diagrams describe business relationships; they are not product screenshots. */
+.business-map{margin:0;min-width:0;color:var(--ink);background:var(--editorial-paper);border:1px solid var(--editorial-rule);border-radius:5px;padding:22px 24px}
+.business-map-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:12px;color:var(--muted);padding-bottom:19px}
+.business-map-note{font-size:11px;white-space:nowrap;color:#7b6c60}
+.business-map-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;position:relative}
+.business-map-group{position:relative;min-width:0;padding-top:16px;border-top:1px solid #c8b8a7}
+.business-map-group:before{content:"";position:absolute;top:-3px;left:0;width:5px;height:5px;border-radius:50%;background:var(--blue)}
+.business-map-group p{font-size:14px;font-weight:600;line-height:1.8;margin:0 0 8px;color:#4f453d}
+.business-map-group>div{display:flex;flex-direction:column;gap:5px}.business-map-group span{font-size:15px;line-height:1.8;color:#695e53}
+.business-map figcaption{font-size:12px;color:var(--muted);line-height:1.8;margin-top:20px}
+.business-map-compact{border:0;border-bottom:1px solid var(--editorial-rule);border-radius:0;padding:19px 23px 22px;min-height:181px;flex-shrink:0}
+.business-map-compact .business-map-heading{padding-bottom:20px}.business-map-compact .business-map-groups{gap:12px}
+.business-map-compact .business-map-group{padding-top:13px}.business-map-compact .business-map-group p{font-size:12px;line-height:1.8;white-space:nowrap;margin-bottom:7px}
+.business-map-compact .business-map-group span{font-size:12px;line-height:1.9}
+
+.detail-focused .detail-reading{width:min(940px,calc(100% - 80px))}
+.detail-focused .detail-focus-hero{padding:34px 0 25px}.detail-focused h1{font-size:30px;line-height:1.55;font-weight:600;letter-spacing:0;margin-bottom:15px}
+.detail-focused .project-summary{font-size:17px;line-height:1.95;color:var(--editorial-copy);margin-bottom:21px;max-width:860px}
+.detail-facts{gap:30px;padding:17px 0;margin-bottom:17px}.detail-facts dd{font-size:15px;font-weight:400;line-height:1.9}.detail-facts dt{font-size:12px}
+.detail-focused .project-tags span{background:transparent;padding:0 13px 0 0;color:var(--muted);font-size:12px;line-height:1.85}
+.detail-focused .project-section{padding:28px 0}.detail-focused .detail-section-heading{margin-bottom:17px}.detail-focused .detail-section-heading h2{font-size:21px;font-weight:600;line-height:1.6;letter-spacing:0}
+.detail-focused .detail-section-heading p{font-size:12px;margin-bottom:5px}.detail-focused .project-copy,.project-context{font-size:17px;line-height:1.95;color:var(--editorial-copy)}
+.project-context{margin:10px 0 21px;max-width:none}
+.detail-steps{gap:26px;margin-top:20px}.detail-steps li{grid-template-columns:32px minmax(0,1fr);gap:13px}
+.detail-steps h3{font-size:18px;font-weight:600;line-height:1.8;margin:0 0 8px}.detail-steps p{font-size:17px;line-height:1.95;color:var(--editorial-copy);margin:0}
+.detail-steps .step-explanation{margin-top:6px}.detail-step-index{font-size:13px;padding-top:6px;color:var(--muted)}
+.detail-focused .result-panel{background:#f2e9df;border-color:#b77b5f;padding:22px 24px;grid-template-columns:85px minmax(0,1fr)}
+.detail-focused .result-panel strong{font-size:17px;line-height:1.95;font-weight:400;color:var(--ink)}
+.delivery-details{margin:21px 0 0;display:grid;gap:14px}.delivery-details>div{display:grid;grid-template-columns:85px minmax(0,1fr);gap:20px}.delivery-details dt{font-size:13px;line-height:1.95;color:var(--muted)}.delivery-details dd{font-size:16px;line-height:1.95;margin:0;color:var(--editorial-copy)}
+.detail-focused .project-switch strong{font-size:14px;font-weight:500}.detail-focused .project-switch{padding-top:19px}
+.resume-heading h1{font-size:30px;font-weight:600}.resume-section h2{font-size:21px;line-height:1.65}.resume-section h3{font-size:17px}.resume-section p,.resume-job p:last-child{font-size:16px;line-height:1.95}
+@media(max-width:1050px){.focus-hero .gallery-hero-inner{gap:35px;grid-template-columns:minmax(0,1fr) 215px}.business-map-compact{padding-left:17px;padding-right:17px}.business-map-compact .business-map-groups{gap:9px}.focus-grid{gap:18px}.focus-project .gallery-project-summary{padding-left:18px;padding-right:18px}.experience-list li{grid-template-columns:125px 225px minmax(0,1fr);gap:18px}}
+@media(max-width:760px){
+ .focus-hero .gallery-hero-inner{grid-template-columns:1fr;gap:19px;padding:25px 0 27px}.focus-hero .gallery-intro h1{font-size:30px;gap:15px;margin-bottom:16px}.focus-hero .gallery-intro h1 span{display:inline;font-size:18px}.focus-hero .overline{font-size:11px}
+ .focus-hero .gallery-domains{font-size:16px;max-width:none;line-height:1.95}.focus-hero .gallery-subtitle{font-size:14px;line-height:1.95}.focus-hero .gallery-resume-links{padding-top:0;gap:10px}.focus-primary{margin-top:17px}
+ .focus-section-heading h2,.focus-more .section-heading h2,.section-heading h2,.gallery-about h2,.contact-section h2{font-size:21px}.editorial-section-intro{font-size:14px}.focus-section-heading h2{max-width:none}.focus-project .gallery-project-summary{padding:21px 20px 20px!important}
+ .focus-project .gallery-project-summary h3,.focus-secondary .gallery-project-summary h3{font-size:20px!important;min-height:0;line-height:1.65;margin-bottom:7px}.focus-project .gallery-project-role{min-height:0;margin-bottom:17px}
+ .focus-evidence>div{grid-template-columns:1fr;gap:4px}.focus-evidence dd,.focus-secondary .focus-evidence dd{font-size:15px;line-height:1.95}.focus-evidence{gap:17px}.focus-secondary .gallery-project-summary{padding:21px 0 0!important}
+ .business-map-compact{min-height:178px;padding:19px 20px 21px}.business-map-compact .business-map-groups{gap:12px}.business-map-compact .business-map-group span{font-size:12px}
+ .business-map-full{padding:19px 18px}.business-map-full .business-map-groups{grid-template-columns:1fr;gap:18px}.business-map-full .business-map-group{padding-top:12px;display:grid;grid-template-columns:90px minmax(0,1fr);gap:16px}.business-map-full .business-map-group p{font-size:13px;margin:0}.business-map-full .business-map-group>div{gap:3px}.business-map-full .business-map-group span{font-size:14px}.business-map-full figcaption{font-size:11px;margin-top:16px}
+ .gallery-about{grid-template-columns:1fr;gap:17px}.experience-list li{grid-template-columns:1fr;gap:8px}.experience-list strong{font-size:16px}.focus-about-copy p{font-size:15px}
+ .detail-focused .detail-reading{width:calc(100% - 36px)}.detail-focused .detail-focus-hero{padding:25px 0 21px}.detail-focused h1{font-size:25px;line-height:1.6;margin-bottom:12px}.detail-focused .project-summary{font-size:16px;line-height:1.95;margin-bottom:18px}
+ .detail-facts{grid-template-columns:1fr;gap:15px;padding:16px 0}.detail-facts dd{font-size:14px}.detail-focused .project-tags span{font-size:11px}
+ .detail-focused .project-section{padding:25px 0}.detail-focused .detail-section-heading h2{font-size:20px;line-height:1.65}.detail-focused .project-copy,.project-context,.detail-steps p{font-size:16px;line-height:1.95}.project-context{margin-top:10px;margin-bottom:19px}
+ .detail-steps li{grid-template-columns:24px minmax(0,1fr);gap:10px}.detail-steps{gap:25px}.detail-steps h3{font-size:17px;line-height:1.85}.detail-step-index{font-size:12px}.detail-steps .step-explanation{margin-top:7px}
+ .detail-focused .result-panel{grid-template-columns:1fr;gap:8px;padding:18px}.detail-focused .result-panel strong{font-size:16px;line-height:1.95}.delivery-details>div{grid-template-columns:1fr;gap:4px}.delivery-details dd{font-size:15px}.delivery-details dt{font-size:12px}.delivery-details{gap:17px}
+ .resume-heading h1{font-size:28px}.resume-section h2{font-size:20px}.resume-section p,.resume-job p:last-child{font-size:16px}
+}
+@media(max-width:360px){.detail-focused .detail-reading{width:calc(100% - 28px)}.focus-hero .gallery-intro h1{font-size:29px;gap:13px}.focus-hero .gallery-intro h1 span{font-size:17px}.business-map-compact{padding-left:16px;padding-right:16px}.business-map-compact .business-map-groups{gap:10px}.business-map-compact .business-map-group p{font-size:11px}.business-map-full .business-map-group{grid-template-columns:80px minmax(0,1fr);gap:11px}.detail-focused h1{font-size:24px}}
+@media print{.resume-heading h1{font-size:26px}.resume-section h2{font-size:19px}.resume-section p,.resume-job p:last-child{font-size:10pt;line-height:1.6}.business-map{break-inside:avoid}.detail-focused h1{font-size:26px}}
+.focus-project .gallery-project-summary h3{min-height:33px}.focus-feature .gallery-project-role{margin-bottom:0}.focus-feature .business-map-compact{border:1px solid var(--editorial-rule);border-radius:4px;padding:16px 17px 18px;margin:17px 0 20px;min-height:0}.focus-feature .business-map-compact .business-map-heading{padding-bottom:17px}.focus-feature .business-map-compact .business-map-groups{gap:10px}
+@media(max-width:1100px) and (min-width:761px){.focus-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.focus-feature .business-map-compact .business-map-group p,.focus-feature .business-map-compact .business-map-group span{font-size:12px}}
+@media(max-width:760px){.focus-feature .business-map-compact{padding:17px 15px 19px;margin-top:17px}.focus-feature .gallery-project-role{margin-bottom:0}.focus-secondary .gallery-project-summary h3{min-height:0}}

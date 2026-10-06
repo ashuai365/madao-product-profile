@@ -1,5 +1,5 @@
 {
-  "contentVersion": "2026-10-04-resumes-v1",
+  "contentVersion": "2026-10-07-editorial-resumes-v2",
   "canonicalDomain": "https://yangshuai.work",
   "routes": [
     "/",
@@ -22,5 +22,6 @@
       "filename": "杨帅_产品经理_金融版_文本.txt",
       "sha256": "7023a60b479238dfca2f58cb79ffcc69dc9bf1f43506e36693ca167ba9a464e4"
     }
-  ]
+  ],
+  "resumeExperienceCount": 6
 }
